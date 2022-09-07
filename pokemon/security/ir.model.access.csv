@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pokemon_pokemon_access,pokemon_pokemon,model_pokemon_pokemon,base.group_user,1,1,1,1
+pokemon_move_access,pokemon_move,model_pokemon_move,base.group_user,1,1,1,1
+pokemon_type_access,pokemon_type,model_pokemon_type,base.group_user,1,1,1,1
+interact_pokemon_access,interact_pokemon,model_interact_pokemon,base.group_user,1,1,1,1
+pokemon_trainer_access,pokemon_trainer,model_pokemon_trainer,base.group_user,1,1,1,1

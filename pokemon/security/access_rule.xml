@@ -1,0 +1,10 @@
+<odoo>
+	<data>
+		<record model="ir.rule" id="pokemon.pokemon_trainer_rule">
+			<field name="name">pokemon.trainer.rule</field>
+			<field name="model_id" ref="pokemon.model_pokemon_trainer"/>		
+			<field name="domain_force">[('trainer', '=', user.id)]</field>
+			<field name="groups" eval="[(4,ref('base.group_user'))]"/>
+		</record>
+	</data>
+</odoo>

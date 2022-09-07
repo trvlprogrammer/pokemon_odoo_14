@@ -1,0 +1,24 @@
+<odoo>
+
+	           <record model="ir.ui.view" id="interact_pokemon_form_view">
+                <field name="name">interact.pokemon.form</field>
+                <field name="model">interact.pokemon</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="form_string">
+                        <field name="result" readonly="1"/>
+                        <group>
+                        	<field name="catch" invisible="1"/>
+                        	<field name="release" invisible="1"/>
+                        	<field name="pokemon_id" invisible="1"/>
+                        	<field name="trainer" invisible="1"/>
+                        	<field name="nick_name" attrs="{ 'invisible': [('catch', '=', False )] }"/>
+                        </group>
+                        <footer>
+		                    <button name="get_pokemon" string="OK" type="object" class="oe_highlight" attrs="{ 'invisible': [('catch', '=', False )] }"/>
+		                    <button string="Cancel" special="cancel"/>
+		                </footer>
+                    </form>
+                </field>
+            </record>
+</odoo>
